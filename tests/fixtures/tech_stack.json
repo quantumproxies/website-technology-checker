@@ -1,0 +1,78 @@
+{
+ "run_id": "cmvkskgs40ub541o5r7vw877h",
+ "slug": "tech_stack",
+ "version": "1.1.0",
+ "status": "done",
+ "input": {
+  "domains": [
+   "nytimes.com",
+   "allbirds.com"
+  ],
+  "max_results": 2
+ },
+ "count": 2,
+ "partial": false,
+ "finished_at": "2026-10-23T09:52:58.452Z",
+ "results": [
+  {
+   "cdn": "Cloudflare",
+   "cms": null,
+   "url": "https://www.allbirds.com/",
+   "chat": [],
+   "fonts": [],
+   "other": [],
+   "domain": "allbirds.com",
+   "server": null,
+   "status": "ok",
+   "payments": [],
+   "security": [
+    "hCaptcha"
+   ],
+   "analytics": [
+    "Google Tag Manager",
+    "Microsoft Clarity"
+   ],
+   "generator": null,
+   "html_lang": "en-US",
+   "marketing": [],
+   "frameworks": [],
+   "powered_by": null,
+   "tech_count": 5,
+   "technologies": [
+    {
+     "name": "Shopify",
+     "category": "ecommerce"
+    },
+    {
+     "name": "Google Tag Manager",
+     "category": "analytics"
+    },
+    {
+     "name": "Microsoft Clarity",
+     "category": "analytics"
+    },
+    {
+     "name": "hCaptcha",
+     "category": "security"
+    },
+    {
+     "name": "Cloudflare",
+     "category": "cdn"
+    }
+   ],
+   "tracking_ids": {
+    "ga4": [],
+    "gtm": [
+     "GTM-TH8KRSBJ"
+    ],
+    "google_ads": [],
+    "meta_pixel": []
+   },
+   "email_marketing": [],
+   "wordpress_theme": null,
+   "wordpress_plugins": [],
+   "ecommerce_platform": "Shopify"
+  }
+ ],
+ "_note": "Real run of 2026-10-23 on two domains; the allbirds.com row is kept here."
+}

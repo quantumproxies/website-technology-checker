@@ -1,0 +1,60 @@
+{
+ "cli": "tech-checker",
+ "name": "Website Technology Checker",
+ "version": "0.1.0",
+ "description": "Website technology checker for Python and the command line: CMS, e-commerce platform, frameworks, analytics, ad pixels, payments, chat and CDN of any website, plus WordPress theme and plugins and GA4, GTM and Meta Pixel ids, as JSON or CSV. Free and open source; sign in with your QuanticData account, no browser extension or proxies needed.",
+ "links": {
+  "repo": "https://github.com/quantumproxies/website-technology-checker",
+  "page": "https://quanticdata.io/collectors/technology-lookup-api/?utm_source=github&utm_medium=cli&utm_campaign=website-technology-checker",
+  "billing": "https://app.quanticdata.io/billing?utm_source=github&utm_medium=cli&utm_campaign=website-technology-checker",
+  "pricing": "https://quanticdata.io/pricing/?utm_source=github&utm_medium=cli&utm_campaign=website-technology-checker"
+ },
+ "commands": [
+  {
+   "name": "lookup",
+   "collector": "tech_stack",
+   "method": "lookup",
+   "help": "the technologies a list of websites run on",
+   "description": "CMS, frameworks, analytics, pixels, payments, chat and hosting of any website, one fetch per domain.",
+   "positional": "domains",
+   "positional_is_list": true,
+   "positional_optional": false,
+   "columns": [
+    "domain",
+    "cms",
+    "ecommerce_platform",
+    "frameworks",
+    "analytics",
+    "cdn",
+    "tech_count"
+   ],
+   "sample": "tech_stack",
+   "inputs": [
+    {
+     "name": "domains",
+     "type": "string[]",
+     "required": true,
+     "description": "Domains or site URLs, one per line (max 50).",
+     "arg": "domains"
+    },
+    {
+     "name": "country",
+     "type": "string",
+     "required": false,
+     "description": "Country to run the request from, as an ISO 3166-1 alpha-2 code (us, gb, de...).",
+     "arg": "country"
+    },
+    {
+     "name": "max_results",
+     "type": "integer",
+     "required": false,
+     "description": "How many sites to deliver at most (1–50). You pay only for delivered sites.",
+     "min": 1,
+     "max": 50,
+     "default": 20,
+     "arg": "max_results"
+    }
+   ]
+  }
+ ]
+}
